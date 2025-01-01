@@ -15,10 +15,10 @@ RUN mvn clean install
 FROM openjdk:11-jre-slim
 
 # Copy the .war file from the build stage
-COPY --from=build /app/target/your-web-app.war /app/your-web-app.war
+COPY --from=build /app/target/FactoryFlow2.war /app/FactoryFlow2.war
 
 # Expose the port that your app will run on
 EXPOSE 8080
 
 # Start the app using the .war file
-CMD ["java", "-jar", "/app/your-web-app.war"]
+CMD ["java", "-jar", "/app/FactoryFlow2.war"]
