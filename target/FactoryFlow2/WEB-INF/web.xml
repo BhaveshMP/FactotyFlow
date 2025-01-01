@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <description></description>
+    <display-name>ReloadServlet</display-name>
+    <servlet-name>ReloadServlet</servlet-name>
+    <servlet-class>com.FM.Servlet.ReloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReloadServlet</servlet-name>
+    <url-pattern>/ReloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminLogDAO</display-name>
+    <servlet-name>AdminLogDAO</servlet-name>
+    <servlet-class>com.FM.DAO.AdminLogDAO</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogDAO</servlet-name>
+    <url-pattern>/AdminLogDAO</url-pattern>
+  </servlet-mapping>
+</web-app>
